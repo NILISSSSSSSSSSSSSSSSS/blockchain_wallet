@@ -1,0 +1,136 @@
+
+.wallet{
+  width:100%;height: 100%;background: #eeeeee;
+  overflow: hidden;overflow-y: auto;
+  //>div{@extend .item-center;}
+}
+
+.wallet-contain{
+  margin: 0 auto;//height: 100%;
+}
+.common-close{
+  position: absolute;top: -10px;right: 0;height:40px;width:40px;font-size: 1.8rem;background: #FFFFFF;
+  box-shadow: 0 17px 13px 0 rgba(0,0,0,0.20);
+  border-radius:  50%;
+  i{
+    width: 16px;height: 2px;display: block;font-style: normal;background: #aaaaaa;position: absolute;top: 18px;
+    left: 13px;
+    &:first-child{
+      transform: rotate(45deg);
+    }
+    &:last-child{
+      transform: rotate(-45deg);
+    }
+  }
+}
+.item-center{
+  margin: 0 auto;
+}
+.copyYes{position: absolute;line-height: 1.2rem; left: 6.9rem;top: 2rem;background: rgba(0,0,0,0.6);color: #FFFFFF;padding: 5px;border-radius: 5px;}
+.address{@extend .item-center;position: relative;
+  width: 90%;height: 17rem;background: #F6F6F6;border-radius: 10px;padding: 1.5rem 0 2rem;
+  display:flex;flex-direction: column;align-items: center;box-shadow: 0 20px 20px 0 rgba(0,0,0,0.10);
+  h2{ 
+      width: 90%;text-align: left;font-size: 1.5rem;display: flex;justify-content: space-between;
+      cursor: default;
+      >span:last-child{color: #E3A33D;}
+  }
+  >p{cursor: pointer;align-self: flex-start;
+    word-break: break-all;text-align: left;font-size: 0.8rem;color: #888888;margin: 1rem 5%;
+  }
+}
+
+.balance{
+  width: 90%;height: 10rem;color: #FFFFFF;
+  background-image: linear-gradient(33deg, #315FD6 0%, rgba(56,140,211,0.95) 100%, rgba(68,199,242,0.90) 200%, rgba(67,231,237,0.85) 300%);
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.15);
+  border-radius: 10px;padding: 1rem 0;position: relative;
+  img{position: absolute;right: 8%}
+  >p{
+    text-align: left;width: 90%;margin: 0 auto;word-break: break-all;
+    &:nth-child(2){
+      font-family: Montserrat-Medium;
+      font-size: 1.2rem;
+      line-height: 3rem;
+    }
+    &:nth-child(3){
+      font-family: Montserrat-ExtraLight;
+      font-size: 1.8rem;
+    }
+      &:nth-child(4){
+        line-height: 2rem;
+       font-family: Montserrat-SemiBold;
+       font-size: 1.5rem;
+      }
+      &:last-child{
+       font-family: Montserrat-Light;
+       font-size: 0.6rem;
+       color: #c9c8c8;
+       line-height: 2rem;
+      }
+  }
+}
+.wallet-btn{
+  width: 90%;display:flex;flex-direction: row;justify-content: space-between;height: 8.5rem;margin: 2rem auto;cursor: default;
+  >div{
+    width: 47%;height: 7.5rem;border-radius: 20px;
+    background: #F6F6F6;box-shadow: 0 20px 20px 0 rgba(0,0,0,0.10);
+    display:flex;flex-direction: column;justify-content: center;align-items: center;align-self: center;
+  }
+}
+.records{@extend .item-center;
+  width: 90%;display:flex;flex-direction: row;justify-content: space-between;align-items: center;
+  div{width: 70%;
+    h2,p{ text-align: left;}
+    p{
+      color: #9a9ca1;
+    }
+  }
+  a{display: block;text-decoration: none;
+    width: 24%;height: 2.5rem;line-height: 2.5rem;background: rgba(170,170,170,0);
+    border: 2px solid #E3A33D;color: #E3A33D;border-radius: 5px;
+  }
+}
+.records-list{
+    margin: 1.6rem auto ;width: 90%;padding-bottom:1rem; 
+    a{text-decoration: none;}
+}
+.records-item{
+  text-decoration: navajowhite;color: #333333;
+  display:flex;flex-direction: row;align-items: center;margin: 10px 0;
+  .records-item-img{width: 16%;text-align: left}
+  >div{width: 84%}
+}
+.records-item-right{
+    border-bottom: 2px solid #DDDDDD;padding-bottom: 10px;
+  >div{display:flex;flex-direction: row;align-items: center;justify-content: space-between;p{color: #888888;}}
+  >p{white-space: nowrap;text-overflow: ellipsis;overflow:hidden;font-size: 0.8rem;color: #888888;padding: 0.3rem 0;}
+    >div.value{
+      color: #BBBBBB;
+      white-space: nowrap;text-overflow: ellipsis;overflow:hidden;
+      p{
+          color: #DD5757;
+////        font-weight:bolder;
+//        font-size: 0.9rem;
+      }
+    }
+}
+.inStyle{color: #5BC763 !important;}
+
+@media screen and (max-width: 361px){
+  .address{
+    height: 19rem;
+  }
+}
+@media screen  and (min-width: 768px){
+  .address{
+    float: left;width: 60%;margin-bottom: 2rem
+  }
+  .wallet-btn{
+    float: right;width: 35%;height: 20.5rem;flex-direction: column;margin: 0 auto 0;
+    >div{clear: both; width:85%;height:9rem;align-self: flex-end; }
+  }
+  .wallet-contain{
+    max-width: 1170px; padding: 0 15px;
+  }
+}

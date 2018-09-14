@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html style="font-size: 50px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1,user-scalable=no,width=device-width,height=device-height">
+	<meta name="renderer" content="webkit">
+	<meta name="keywords" content="数字币,比特币,莱特币,以太坊">
+	<meta name="description" content="DigiFinex交易所">
+	<meta property="wb:webmaster" content="8af72a3a7309f0ee">
+	<meta name="format-detection" content="telephone=no">
+	<title>数字币交易所，公开透明，没有上架费的区块链交易所</title>
+	<script type="text/javascript" src="./static/rem.js"></script>
+    <link rel="stylesheet" href="./static/reset.min.css">
+	<link rel="stylesheet" href="./static/swiper-4.1.6.min.css">
+<style>
+    .downloadIndex{
+        height: 100%;
+        padding: 0.2rem 0;
+        box-sizing: border-box;
+        background-color: #fff;
+/*        background-image: url("//static.digifinex.com/mobile/img/download/bg_top_image.svg"), url("//static.digifinex.com/mobile/img/download/bg_fo_imageb.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position:  0% 0%, 100% 100%;*/
+        position: relative;
+    }
+    .tip_title{
+        font-family: PingFangSC-Regular;
+        font-size: 0.24rem;
+        color: #525E80;
+        text-align: center;
+        line-height: 0.34rem;
+    }
+    .step_container{
+        width: 100%;
+/*        overflow: hidden;*/
+    }
+    .swiper-container {
+        width: 100%;
+        min-height: 9rem;
+        overflow: inherit;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        width: 0.5rem;
+        height: 0.46rem;
+        top: 35%;
+    }
+    .swiper-pagination-bullet{
+        background: #DBE3EC;;
+        width: 0.2rem;
+        height: 0.2rem;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active{
+        background: #2861F6;
+    }
+    .swiper-slide{
+        padding: 0 0.3rem;
+        box-sizing: border-box;
+    }
+    .step_container .step-nth{
+        font-family: PingFangSC-Semibold;
+        font-size: 0.28rem;
+        /* font-weight: 600; */
+        color: #525E80;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        align-items: center;
+        line-height: 0.56rem;
+        font-weight: bold;
+    }
+    .step_container .step-nth span{
+        font-size: 0.72rem;
+        font-family: PingFangSC-Semibold;
+        color: #2861F6;
+        margin: 0 0.15rem;
+        font-weight: bold;
+    }
+    .step_container .stepBg{
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    .step_container .stepTips{
+        text-align: center;
+        position: relative;
+        top: -0.8rem;
+    }
+    .step_container .stepTips > p{
+        font-family: PingFangSC-Semibold;
+        font-size: 0.36rem;
+        /* font-weight: 600; */
+        line-height: 0.5rem;
+        color: #525E80;
+        font-weight: bold;
+    }
+    .step_container .stepTips > span{
+        font-family: PingFangSC-Regular;
+        font-size: 0.28rem;
+        line-height: 0.4rem;
+        color: #75809F;
+    }
+    .step_container .service{
+        font-family: PingFangSC-Regular;
+        font-size: 13px;
+        line-height: 0.34rem;
+        color: #9BACBF;
+        text-align: center;
+        margin: 0.62rem auto 0.2rem;
+        position: relative;
+        top: -0.8rem;
+    }
+    .step_container .service a{
+        color: #1E62AC;
+        font-weight: bold;
+    }
+    .step_container .service02{
+        margin: 0;
+    }
+    .step_container .stepBtn{
+        background: #2861F6;
+        border-radius: 0.56rem;
+        width: 100%;
+        height: 46px;
+        line-height: 46px;
+        font-family: PingFangSC-Regular;
+        font-size: 0.34rem;
+        color: #FFFFFF;
+        position: relative;
+        top: -0.8rem;
+        margin-top: 0.42rem;
+    }
+    .step_container .stepBtn:active{
+        background: rgba(40, 97, 246, 0.8);
+    }
+    .SafariView{
+        position: absolute;
+        top: 0;
+        z-index: 999;
+        background: rgba(0,0,0,0.5);
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    .SafariView img{
+        width: 1.76rem;
+        float: right;
+        margin-right: 0.46rem;
+        margin-top: 0.2rem;
+    }
+    .step_container .stepTop{
+        margin-top: 0.28rem;
+        margin-bottom: 0.26rem;
+    }
+    .step_container .stepTop p{
+        font-size: 0.26rem;
+        color: #9BACBF;
+        line-height: 0.36rem;
+        white-space: nowrap;
+    }
+    .step_container .stepTop p:nth-child(1){
+        margin-bottom: 0.1rem;
+    }
+</style></head>
+
+
+<body>
+    <div class="downloadIndex">
+<!--         <p class="tip_title">DigiFinex IOS正式版下载</p> -->
+        <div class="step_container">
+            <div class="swiper-container swiper-container-horizontal swiper-container-ios">
+                <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                    <div class="swiper-slide swiper-slide-active" style="width: 375px;">
+                        <p class="step-nth">step <span>1</span> (第一步)</p>
+                        <div class="stepTop">
+                            <p>Click the button below to download and install the App.</p>
+                            <p>点击下方按钮下载并安装应用</p>
+                        </div>
+                        <img class="stepBg" src="./static/a_image02.png">
+                        <p class="service">Contact us via telegram: <a target="_blank" href="https://t.me/DigiFinexEN">https://t.me/DigiFinexEN</a></p>
+                        <p class="service service02">如有任何问题可添加QQ群：<a target="_blank" href="https://shang.qq.com/wpa/qunwpa?idkey=1b0520ea1191923113ed5b6b1e81d13d9efb4f829019deb0eb673d165549fedc">744976421</a></p>
+                        <button class="stepBtn" id="stepBtnOne">Download（下载）</button>
+                    </div>
+                    <div class="swiper-slide swiper-slide-next" style="width: 375px;">
+                        <p class="step-nth">step <span>2</span> (第二步)</p>
+                        <div class="stepTop">
+                            <p>Wait for the installation completed.</p>
+                            <p>等待应用安装完成。</p>
+                        </div>
+                        <img class="stepBg" src="./static/b_image02.png">
+                        <p class="service">Contact us via telegram: <a target="_blank" href="https://t.me/DigiFinexEN">https://t.me/DigiFinexEN</a></p>
+                        <p class="service service02">如有任何问题可添加QQ群：<a target="_blank" href="https://shang.qq.com/wpa/qunwpa?idkey=1b0520ea1191923113ed5b6b1e81d13d9efb4f829019deb0eb673d165549fedc">744976421</a></p>
+                        <button class="stepBtn" id="stepBtnSecond">Next Step（下一步）</button>
+                    </div>
+                    <div class="swiper-slide" style="width: 375px;">
+                        <p class="step-nth">step <span>3</span> (第三步)</p>
+                        <div class="stepTop" style="margin-bottom: 0;">
+                            <p style="white-space: inherit;">Trust the App developer. Go to 'Settings' -&gt; 'General' -&gt; 'Device Management' and trust the app developer.</p>
+                            <p style="white-space: inherit;">信任应用开发者。前往‘设置’ -&gt; ‘通用’ -&gt; '设备管理'，选择信任应用的开发者。</p>
+                        </div>
+                        <img class="stepBg" style="width: 95%;" src="./static/c_image@2x.png">
+<!--                         <p class="service">Contact us via telegram: <a target="_blank" href="https://t.me/Digifinexcn">https://t.me/Digifinexcn</a></p>
+                        <p class="service service02">如有任何问题可添加QQ群：<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=1b0520ea1191923113ed5b6b1e81d13d9efb4f829019deb0eb673d165549fedc">744976421</a></p> -->
+                        <button class="stepBtn" id="stepBtnThird" style="margin-top: 0.9rem;">Trust Now（立即信任）</button>
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev swiper-button-white swiper-button-disabled"></div>
+                <div class="swiper-button-next swiper-button-white"></div>
+            </div>
+        </div>
+        <div class="SafariView">
+            <img src="./static/safari_3x.png">
+        </div>
+    </div>
+
+<script type="text/javascript" src="./static/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="./static/swiper-4.1.6.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        /**
+         * 判断浏览器类型
+         * @return {Number} [ 1: Firefox, 2: 傲游, 3: Opera, 4: Safari, 5: Chrome, 6: IE, 0: 其他 ]
+         */
+        function browserType() {
+            var userAgent = navigator.userAgent;
+            var isOpera = userAgent.indexOf("Opera") > -1;
+            var isMaxthon = userAgent.indexOf("Maxthon") > -1 ;
+            var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera ;
+            var isFF = userAgent.indexOf("Firefox") > -1 ;
+            var isSafari = userAgent.indexOf("Safari") > -1 && userAgent.indexOf("Chrome") < 1 ;
+            var isChrome = userAgent.indexOf("Chrome") > -1 ;
+            var isIE5 = isIE55 = isIE6 = isIE7 = isIE8 = false;
+
+            if(isFF){return 1;}
+            if(isMaxthon){return 2;}
+            if(isOpera){return 3;}
+            if(isSafari){return 4;}
+            if(isChrome){return 5;}
+            if(isIE){return 6;}
+            return 0;
+        }
+
+        if(browserType()!=4){
+            document.getElementsByClassName('SafariView')[0].setAttribute('style','display:block');
+        }
+
+        $('.downloadIndex').on('click','.SafariView',function(){
+            $(this).hide();
+        })
+
+        var mySwiper = new Swiper ('.swiper-container', {
+            loop: false,
+            observer:true,
+            observeParents:true,
+            centeredSlides : true,
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        })
+
+        // 立即安装
+        $("#stepBtnOne").on("click", function(){
+            if(navigator.userAgent.match(/android/i)){
+                alert("您的手机是Android系统，无法安装iOS应用");
+                return false;
+            }
+            window.location = 'itms-services://?action=download-manifest&url=https://wallet.accelchain.io/static/ios/static/acce.plist';
+            setTimeout(function(){
+                mySwiper.slideNext();
+            },500)
+        })
+        // 下一步
+        $("#stepBtnSecond").on("click", function(){
+            mySwiper.slideNext();
+            // window.close();
+        })
+        // 立即信任
+        $("#stepBtnThird").on("click", function(){
+            window.location = 'https://www.digifinex.com/app/ios/match_AppStore_comdigifinexapp.mobileprovision';
+        })
+    })
+</script>
+</body></html>

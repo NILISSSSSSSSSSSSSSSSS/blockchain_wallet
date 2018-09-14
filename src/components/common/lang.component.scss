@@ -1,0 +1,19 @@
+.footer{
+  width: 90%;height:4rem;align-items: center;
+  position: absolute;bottom:0rem;left: 5%;
+  border-top: 2px solid rgba(255,255,255,0.4);
+  display: flex;flex-direction: row;justify-content: space-around;
+}
+.footer>div{
+  font-family: Montserrat-SemiBold;
+  font-size: 0.9rem;line-height: 2rem;opacity: 0.4;
+  text-align: right;cursor: pointer;color: #FFFFFF;
+  -webkit-tap-highlight-color: transparent;
+}
+@media screen and (min-width: 768px){
+  .footer{height: 5rem;}
+  .footer>div{
+    font-size: 1.2rem;
+  }
+}
+.active{opacity: 1 !important;}

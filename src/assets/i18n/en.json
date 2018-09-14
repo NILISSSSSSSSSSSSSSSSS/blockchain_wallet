@@ -1,0 +1,136 @@
+{
+  "common":{
+    "openPwdTitle":"Enter the password  for this wallet",
+    "open":"ok",
+    "cancel":"cancel",
+    "notNull":"Can not be empty",
+    "pwdError":"Password error",
+    "pwdKeyError":"Password or keyprivate error",
+    "pwdNotNull":"The password can not be empty",
+    "pwdNotSame":"Two input password must be consistent",
+    "sendSuc":"Transact success ",
+    "sendFailed":"Failure to send a transaction",
+    "loseEfficacy":"The wallet has failed, please recreate it",
+    "openFail":"Open wallet is failed",
+    "balanceNotEnough":"Your balance is insufficient",
+    "copyYes":"Replicating Success",
+    "lenError":"Enter the correct address",
+    "loadingError":"Wallet loading failure",
+    "lenToast":"No more than 8 bits after a decimal point",
+    "nonceError":"Getting “nonce” failure",
+    "haveSimilarName":"There is a homonym purse that can't be imported",
+    "haveSimilarWallet":"The user has a corresponding account and will stop the import of this account. If the user needs to import, the original account must be deleted and imported again."
+  },
+  "err":{
+    "-32000":"replacement transaction underpriced"
+  },
+  "home":{
+    "remove1":"Attention! This wallet will be removed!Please confirm your backup operation, otherwise the wallet will disappear forever! Are you sure to continue ? Wallet address:",
+    "remove2":"Final warning!Are you sure to remove the wallet?Please confirm your operation again:",
+    "ok":"ok",
+    "no":"no",
+    "updateFailed":"update failed",
+    "versionUpdate":"Version update"
+  },
+  "keyimport":{
+    "title":"import wallet",
+    "placeholder":"private key",
+    "label":"password",
+    "label1":"password again",
+    "import":"import",
+    "importError":"Import failure, please try again "
+  },
+  "slash":{
+    "title":"Accel Chain",
+    "tip":"ACCE",
+    "title1":"Get cryptocurrency by sharing your idle resources",
+    "createWallet":"create a new wallet",
+    "openWallet":"Open Wallet From Key File",
+    "or":"OR",
+    "openWallet0":"Open Other Wallet From KeyStore",
+    "nodata": "A file that is not saved for the time being"
+  },
+  "create":{
+    "title":"create",
+    "name":"WALLET NAME",
+    "nameNotNull":"Wallet Name can not be empty",
+    "title1":"Input your Password to create your wallet",
+    "label":"PASSWORD",
+    "label1":"COMFIRM PASSWORD",
+    "btn":"Create",
+    "pwdLen":"The password should be no less than 8 bits and kept properly, for no way to be recovered.",
+    "pwdToast":"The password should be no less than 8 bits",
+    "walletExist":"The purse has already existed",
+    "createFail": "created Fail"
+  },
+  "download":{
+    "title":"download",
+    "tip1":"Please",
+    "tip2":"DOWNLOAD",
+    "tip3":" your ",
+    "tip4":"KEY FILE",
+    "tip5":"in case of data loss by accident.",
+    "tip6":"This local key file will be the",
+    "tip7":"ONLY WAY",
+    "tip8":"to open this wallet,",
+    "tip9":"please keep it properly to protect your peoperty security.",
+    "title1":"",
+    "btn":"Click to Download",
+    "openThis":"Open this Wallet",
+    "openOther0":"Open Other Wallet From KeyStore",
+    "openOther":"Open Other Wallet From Key File",
+    "create":"Create another Wallet",
+    "downLoadFile":"Download KeyStore",
+    "downLoadKeystroe":"Download Key File"
+  },
+  "wallet":{
+    "title":"wallet",
+    "export":"Export",
+    "address":"Address",
+    "balance":"Balance",
+    "value":"currency price from:DigiFinex.com",
+    "send":"Send Token",
+    "recv":"Recv Token",
+    "records":"Records",
+    "showRecords":"Show last 10 transaction records",
+    "more":"More",
+    "out":"Expense",
+    "in":"Income",
+    "date":"",
+    "fee":"fee",
+    "NoTransaction":"No transaction record",
+    "DownloadFailure":"Download failure",
+    "DownloadSuccess":"The key file has been saved in the ACCEdata folder",
+    "refreshText":"pull-to-refresh"
+  },
+  "send":{
+    "title":"Send Token",
+    "generate":"Generate Transaction",
+    "viewCode":"click to View the trade code",
+    "closeCode":"Closing the transaction code",
+    "sendSPT":"You are about to send {amount} to address：",
+    "sendNow":"Send Now?",
+    "scan":"scan",
+    "sendSuccess":"Transact success，TradingID="
+  },
+  "recv":{
+    "title":"Recv Token",
+    "copy":"Click to Copy"
+  },
+  "warning":{
+    "title":"Are you sure not download the Key File ?",
+    "ok":"Yes I am Sure",
+    "downLoad":"Download Now"
+  },
+  "code":{
+    "10001":"服务器内部错误",
+    "10002":"接口参数不正确",
+    "10007":"内容不存在",
+    "20001":"请求发送失败",
+    "20002":"请求处理超时",
+    "30001":"未找到该钱包地址",
+    "31001":"未找到该区块",
+    "32001":"未找到该交易",
+    "32002":"错误的交易请求"
+  }
+}

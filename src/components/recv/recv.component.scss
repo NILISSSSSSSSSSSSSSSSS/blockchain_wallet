@@ -1,0 +1,29 @@
+.recv{
+width: 100%;height: 100%;background: #f2f2f2;overflow: hidden;overflow-y: auto;//display: flex;align-items: center;justify-content: center;
+}
+.recv-content{
+  background: #FAFAFA;border-radius: 10px;
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.10);
+  width: 90%;margin: 1.2rem auto ;padding: 1.2rem 0;
+}
+.recv-code{
+  width: 20rem;height: 20rem;background: #D8D8D8;
+  border: 1px solid #979797;margin: 1.2rem auto;
+}
+.recv-address{
+  width: 100%;height: 6rem;background-image: linear-gradient(-8deg, #404E98 0%, #40ABDC 100%);
+  box-shadow: inset 0 7px 27px 0 rgba(0,0,0,0.05);color: #FFFFFF;font-size: 1.2rem;margin: 2.2rem 0;
+  >p{width: 90%;margin: 0 auto;padding: 1.2rem 0; word-break: break-all;text-align: left;}
+}
+.recv-copy{
+  text-align: right;margin: 1.2rem 5%;position: relative;
+  a{
+    font-size: 2rem;color: #222222;cursor: pointer;
+  }
+
+}
+.copyYes{position: absolute;line-height: 1.2rem; right: 1.5rem;top: -2rem;background: rgba(0,0,0,0.6);color: #FFFFFF;padding: 5px;border-radius: 5px;}
+
+@media screen  and (min-width: 768px){
+    .recv-content{max-width: 900px;}
+  }

@@ -1,0 +1,105 @@
+
+
+.send{width: 100%;height: 100%;background: #f2f2f2;}
+.send-to{
+  width: 90%;
+  background: #FAFAFA;border-radius: 10px;margin: 1.2rem auto;
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.10);
+}
+.send-to-content{
+  width: 90%;margin: 0 auto ;padding: 1.5rem 0;
+  >div.send-input{
+    display: flex;flex-direction: row;height: 3.4rem;
+  }
+  >div{
+    
+    label{
+      /*width: 20%;*/display: block;
+      text-align: left;color: #BBBBBB;line-height: 3.4rem;
+    }
+    input{
+      color: #888888;border: 0; border-bottom: 2px solid #DDDDDD;padding: 8px 0;line-height: 1.6rem;outline: none;
+      background: #FAFAFA;text-align: left;/*width: 78%;*/margin-left: 1rem;flex: 2;
+    }
+  }
+  a{
+    font-family: Montserrat-SemiBold;margin-top: 1rem;
+    line-height: 3.8rem;font-size: 1.2rem;background: #EC4B4B;
+    background-image: linear-gradient(0deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,0.30) 100%);
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.10);
+    display: block;text-align: center;border-radius: 10px;
+    color: #F6F6F6;cursor: default;
+  }
+}
+.send-fee{
+    display: flex;justify-content: space-between;height: 5rem;align-items: flex-start;position: relative;
+  >div{
+      color: #BBBBBB;
+      >i{
+        line-height: 2rem;font-size: 1.2rem;font-style: normal;
+      }
+      >p{font-size: 0.8rem;text-align: left;}
+  }
+  >div.saoma{
+      position: absolute;right: 0.6rem;top: 1.4rem;
+  }
+  
+}
+.wordstyle{text-align: left; margin: 0 0 0.8rem 0;}
+.send-toast{
+  width: 100%;height: 100%;position: fixed;top: 0;left:0;z-index:8;background: rgba(0,0,0,0.5);
+  display: flex;justify-content: center;align-items: center ;border-radius: 10px;
+  h3{
+    height: 2rem;font-size: 1.2rem;
+    @extend .wordstyle;color: #222222;
+    line-height: 2rem;cursor: pointer;text-align: center;
+  }
+  h4{
+    @extend .wordstyle;word-break: break-all;
+    width: 90%; 
+    font-size: 1.1rem;
+    color: #EE5454;
+    span{
+      font-weight: normal
+    }
+  }
+  p{
+    @extend .wordstyle; width: 90%; font-size: 0.9rem;color: #4A4A4A;word-break: break-all;line-height: 1.4rem;
+    position:relative;
+    /*text-overflow:ellipsis;  white-space:nowrap;
+    //text-overflow:ellipsis;
+    //white-space: nowrap;*/
+    // overflow:hidden; 
+    // display: -webkit-box;
+    // -webkit-box-orient: vertical;
+    // -webkit-line-clamp: 3;
+  }
+}
+.send-contain{
+  width: 90%;background: #FFFFFF;border-radius: 10px;position: relative;padding: 1.2rem 0;//height: 18rem;
+  display: flex;justify-content: center;align-items: center ;flex-direction: column;
+  >div{
+    width: 90%;
+    display: flex;flex-direction: row;justify-content: space-around;align-items: center ;
+  }
+}
+.send-btn{
+  h2{
+    font-size: 1.3rem;
+  }
+  img{
+    cursor: pointer;
+  }
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+@media screen  and (min-width: 768px){
+    .send-to{max-width: 900px;}
+    .send-to-content a{width: 300px;margin: 5rem auto 0;}
+    .send-contain{width: 900px;}
+  }
